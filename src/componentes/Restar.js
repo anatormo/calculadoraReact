@@ -6,7 +6,6 @@ function Restar () {
         numero2: ""
     });
     
-   
     //funcion para que cambie el valor de num1
     function F1(event) {
        setInput({
@@ -24,10 +23,11 @@ function Restar () {
     
     //defines una variable para dentro del return
     let resultado = parseInt(input.numero1) - parseInt(input.numero2);
-
     
 return(
+    
     <div>
+        <p>
         <input
             type="number"
              //recuadro donde se introduce el número
@@ -35,6 +35,7 @@ return(
             //llamamos a la funcion cuando hay un cambio
             onChange={F1}
         />
+        -
         <input
         type="number"
         //recuadro donde se introduce el número
@@ -44,6 +45,7 @@ return(
          />
     
         = {resultado}
+        </p>
 
     </div>
 )

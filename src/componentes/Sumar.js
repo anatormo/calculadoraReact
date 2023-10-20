@@ -15,17 +15,18 @@ function Sumar () {
     
     //defines una variable para dentro del return
     let resultado = parseInt(numero1) + parseInt(numero2);
-
     
 return(
     <div>
+        <p>
         <input
             type="number"
              //recuadro donde se introduce el número
             placeholder="Introduce un número" 
             //llamamos a la funcion cuando hay un cambio
             onChange={F1}
-        />
+        />    
+           +  
         <input
         type="number"
         //recuadro donde se introduce el número
@@ -35,7 +36,7 @@ return(
          />
     
         = {resultado}
-
+        </p>
     </div>
 )
 
